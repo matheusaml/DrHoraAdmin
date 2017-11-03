@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Modificar {{novoFuncionario.nome}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="novoFuncionario.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>CPf</ion-label>
+        <ion-input type="number" [(ngModel)]="novoFuncionario.cpf"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Telefone</ion-label>
+        <ion-input type="number" [(ngModel)]="novoFuncionario.telefone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Especialidade</ion-label>
+        <ion-input type="text" [(ngModel)]="novoFuncionario.especialidade"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Endereço</ion-label>
+        <ion-input type="text" [(ngModel)]="novoFuncionario.endereco"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Foto</ion-label>
+        <ion-input type="string" [(ngModel)]="novoFuncionario.itemNumber"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="editarNovoFuncionario(novoFuncionario)">Confirmar</button>
+</ion-content>
